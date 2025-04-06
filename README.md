@@ -2,7 +2,7 @@
 
 ## Bundle One 
 ### Exercise 1
-'''bash
+```bash
 Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle1 (master)
 $ git init
 Reinitialized existing Git repository in C:/Users/Amalitech/Desktop/AmaliTech/gitExercisesProject/bundle1/.git/
@@ -110,13 +110,13 @@ Deleted branch test (was 3d2245d).
 
 Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle1 (dev)
 $
-'''
+```
 
 
 
 ### Exercise 2
 
-'''bash
+```bash
 Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle1 (dev)
 $ git add home.html
 
@@ -433,4 +433,4 @@ HEAD is now at c0c4805 Adding home and about pages
 
 Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle1 (dev)
 $ 
-'''
+```
