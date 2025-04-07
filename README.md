@@ -1,6 +1,6 @@
 # Git Exercises
 
-## Bundle One 
+## Bundle 1
 ### Exercise 1
 ```bash
 Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle1 (master)
@@ -888,7 +888,7 @@ To https://github.com/umbereye27/Bundle-2.git
 Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/team-page)
 $
 ```
-### Ex2rcise 1
+### Exercise 2
 ```bash
 
 Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (main)
@@ -992,4 +992,254 @@ To https://github.com/umbereye27/Bundle-2.git
 
 Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/home-page-redesign)  
 $
+```
+## Bundle 4
+
+### Exercise 1
+```bash
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (main)
+$ git remote add git-copy https://github.com/umbereye27/Bundle-4.git
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (main)
+$ git add .
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)        
+        modified:   index.html
+
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (main)
+$ git commit -m "Update homepage content"
+[main 0a4ab75] Update homepage content
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 320 bytes | 160.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/umbereye27/Bundle-2.git
+   54e7518..0a4ab75  main -> main
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (main)
+$ git push git-copy main
+Enumerating objects: 41, done.
+Counting objects: 100% (41/41), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (39/39), done.
+Writing objects: 100% (41/41), 8.09 KiB | 517.00 KiB/s, done.
+Total 41 (delta 20), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (20/20), done.
+To https://github.com/umbereye27/Bundle-4.git
+ * [new branch]      main -> main   
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (main)
+$ ^C
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (main)
+$
+```
+
+### Exerce 2
+
+``` bash
+malitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git status
+On branch ft/footer
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        footer.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git add .
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git coomit -m "Add foot file in project"
+git: 'coomit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git commit -m "Add foot file in pr
+oject"
+[ft/footer b41bb6c] Add foot file in project
+ 1 file changed, 11 insertions(+)   
+ create mode 100644 footer.html     
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git status
+On branch ft/footer
+Changes not staged for commit:      
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory) 
+        modified:   footer.html     
+
+no changes added to commit (use "git add" and/or "git commit -a")       
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git add .
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git commit -m "Add content footer 
+file in project"
+[ft/footer 784613d] Add content footer file in project
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking       
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git push --set-upstream origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done. 
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 715 bytes | 238.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.    
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:    
+remote:      https://github.com/umbereye27/Bundle-2/pull/new/ft/footer  
+remote:
+To https://github.com/umbereye27/Bundle-2.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git push --set-upstream origin ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+Everything up-to-date
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git status
+On branch ft/footer
+Your branch is up to date with 'origin/ft/footer'.
+
+nothing to commit, working tree clean
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git status
+On branch ft/footer
+Your branch is up to date with 'origin/ft/footer'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory) 
+        modified:   footer.html     
+
+no changes added to commit (use "git add" and/or "git commit -a")       
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git add .
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git status
+On branch ft/footer
+Your branch is up to date with 'origin/ft/footer'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   footer.html     
+
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git commit -m "Add content footer file in project"
+[ft/footer 28e86cc] Add content footer file in project
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git push --set-upstream origin ft/footer
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done. 
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.   
+To https://github.com/umbereye27/Bundle-2.git
+   784613d..28e86cc  ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/squashing)
+$ git merge --squash ft/footer
+Updating 0a4ab75..28e86cc
+Fast-forward
+Squash commit -- not updating HEAD  
+ footer.html | 13 +++++++++++++     
+ 1 file changed, 13 insertions(+)   
+ create mode 100644 footer.html     
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/squashing)
+$ git commit -m "footer changes squashing"
+[ft/squashing 3d9fd70] footer changes squashing
+ 1 file changed, 13 insertions(+)   
+ create mode 100644 footer.html     
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/squashing)
+$ git push origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done. 
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 445 bytes | 445.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.    
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting: 
+remote:      https://github.com/umbereye27/Bundle-2/pull/new/ft/squashing
+remote:
+To https://github.com/umbereye27/Bundle-2.git
+ * [new branch]      ft/squashing -> ft/squashing
+
+Amalitech@DESKTOP-DPAQHJ3 MINGW64 ~/Desktop/AmaliTech/gitExercisesProject/Bundle-2 (ft/squashing)
 ```
